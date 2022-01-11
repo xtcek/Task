@@ -5,7 +5,7 @@ function caesar13(str) {
 	let strSplit = str.split("")
 
 	for (let i = 0; i < strSplit.length; i++) {
-    }
-
+		let index = alphabet.indexOf(strSplit[i])
+	}
 	// return ''
 }
