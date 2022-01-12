@@ -1,4 +1,8 @@
 function caesar13(str) {
+	if(typeof str !== 'string'){
+		return
+	}
+	
 	const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	let special = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g
 	let strReplace = str.replace(special, "")
