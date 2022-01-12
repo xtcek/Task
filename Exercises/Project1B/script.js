@@ -1,6 +1,7 @@
 function caesar13(str) {
 	const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	let special = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g
+	let strReplace = str.replace(special, "")
 
 	// if (shift > 13) {
 	// } else if (typeof str != "string") {
