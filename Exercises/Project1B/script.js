@@ -18,7 +18,7 @@ function caesar13(str) {
 		if(Number.isNaN(el)){
 			return el
 		}
-
+		const index = validate()
 	}).join("")
 
 	// const index;
