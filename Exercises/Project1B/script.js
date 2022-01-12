@@ -15,6 +15,9 @@ function caesar13(str) {
 	let strReplace = str.replace(special, "")
 	let strSplit = str.split("")
 	return strSplit.map(el =>{
+		if(){
+			
+		}
 
 	}).join("")
 
