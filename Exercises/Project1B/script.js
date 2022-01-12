@@ -9,6 +9,8 @@ function caesar13(str) {
 	let strSplit = str.split("")
 	return strSplit
 
+	const index;
+
 	// if (shift > 13) {
 	// } else if (typeof str != "string") {
 	// 	return "str have to be string"
