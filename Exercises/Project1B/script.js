@@ -15,8 +15,8 @@ function caesar13(str) {
 	let strReplace = str.replace(special, "")
 	let strSplit = str.split("")
 	return strSplit.map(el =>{
-		
-	})
+
+	}).join("")
 
 	// const index;
 
@@ -34,4 +34,4 @@ function caesar13(str) {
 }
 
 console.log(caesar13(12345678))
-console.log(caesar13())
+console.log(caesar13('abddefg'))
