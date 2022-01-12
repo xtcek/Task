@@ -1,3 +1,8 @@
+function validate(itemLength, item) {
+	
+	
+}
+
 function caesar13(str) {
 	if(typeof str !== 'string' || !str.length){
 		return 'Input is not a string or it is empty'
