@@ -11,7 +11,7 @@ function caesar13(str) {
 	}
 
 	const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	const special = /[^a-zA-Z0-9 ]/gi
+	const special = /[\W]/g
 	return str.replace(special, '').split('')
 		.map(el => {
 			if (!Number.isNaN(+el)) {
