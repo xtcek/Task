@@ -2,7 +2,7 @@ function validate(itemLength, length) {
 	if(itemLength >= length){
 		return itemLength - length
 	}
-	return
+	return itemLength
 }
 
 function caesar13(str) {
