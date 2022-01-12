@@ -1,6 +1,6 @@
 function caesar13(str) {
 	const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	const special = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g
+	let special = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g
 	let shift = 13
 	let strSplit = str.split("")
 	let result = ""
