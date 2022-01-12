@@ -1,6 +1,6 @@
 function caesar13(str) {
 	if(typeof str !== 'string'){
-		return ''
+		return 'Input is not a string'
 	}
 	
 	const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -23,3 +23,4 @@ function caesar13(str) {
 }
 
 console.log(caesar13(12345678))
+console.log(caesar13('abcdefgh'))
