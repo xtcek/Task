@@ -15,10 +15,11 @@ function caesar13(str) {
 	let strReplace = str.replace(special, "")
 	let strSplit = str.split("")
 	return strSplit.map(el =>{
-		if(Number.isNaN(el)){
+		if(!Number.isNaN(+el)){
 			return el
 		}
-		const index = validate()
+		const index = validate(alphabet.indexOf(el) + 13, alphabet.length)
+		return el
 	}).join("")
 
 	// const index;
