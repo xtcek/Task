@@ -1,6 +1,6 @@
 function caesar13(str) {
 	if(typeof str !== 'string'){
-		return
+		return ''
 	}
 	
 	const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -21,4 +21,4 @@ function caesar13(str) {
 	// return ''
 }
 
-console.log(caesar13("PRZEPROGRAMOWANI"))
+console.log(caesar13(12345678))
