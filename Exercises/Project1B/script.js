@@ -7,6 +7,7 @@ function caesar13(str) {
 	let special = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g
 	let strReplace = str.replace(special, "")
 	let strSplit = str.split("")
+	return strSplit
 
 	// if (shift > 13) {
 	// } else if (typeof str != "string") {
