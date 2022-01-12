@@ -29,6 +29,8 @@ function caesar13(str) {
 function verify(input, goal){
 	if(input === goal){
 		console.log('Jest ok!');
+	} else {
+		console.log(`Nie jest ok... dostałeś ${input} zamiast ${goal}`);
 	}
 }
 
