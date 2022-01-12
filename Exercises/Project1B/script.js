@@ -19,7 +19,7 @@ function caesar13(str) {
 			return el
 		}
 		const index = validate(alphabet.indexOf(el) + 13, alphabet.length)
-		return el === el.toUpperCase() ? alphabet[index].toUpperCase()
+		return el === el.toUpperCase() ? alphabet[index].toUpperCase() : alphabet[index].toLowerCase()
 	}).join("")
 
 	// const index;
