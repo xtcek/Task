@@ -1,6 +1,6 @@
-function validate(itemLength, item) {
-	if(itemLength >= item){
-		return
+function validate(itemLength, length) {
+	if(itemLength >= length){
+		return itemLength - length
 	}
 	return
 }
