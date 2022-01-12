@@ -1,6 +1,6 @@
 function caesar13(str) {
-	if(typeof str !== 'string'){
-		return 'Input is not a string'
+	if(typeof str !== 'string' || !str.length){
+		return 'Input is not a string or it is empty'
 	}
 	
 	const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -9,7 +9,7 @@ function caesar13(str) {
 	let strSplit = str.split("")
 	return strSplit
 
-	const index;
+	// const index;
 
 	// if (shift > 13) {
 	// } else if (typeof str != "string") {
@@ -25,4 +25,4 @@ function caesar13(str) {
 }
 
 console.log(caesar13(12345678))
-console.log(caesar13('abcdefgh'))
+console.log(caesar13())
