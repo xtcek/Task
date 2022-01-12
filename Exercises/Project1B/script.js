@@ -25,6 +25,11 @@ function caesar13(str) {
 		})
 		.join("")
 }
+// console.log(caesar13('PRZEPROGRAMOWANI'));
+// console.log(caesar13('PrZePrOgRaMoWaNi'));
+// console.log(caesar13('PRZE123$%^pro&*()-=gramo3456WANi789'));
+// console.log(caesar13('     Repro     gramat în $%^&              viitorul        ap   ro pi a      t'));
+// console.log(caesar13('PROGRAкы   ж г ы м д ы    ш      mowaно́вoйMücke nko321$$##@@!!'));
 
 function verify(input, goal){
 	if(input === goal){
@@ -34,7 +39,8 @@ function verify(input, goal){
 	}
 }
 
-console.log(caesar13(12345678))
-console.log(caesar13("PRZEP                            ROGRAMOWANI"))
-console.log(caesar13("Ich fahre mit meinem Auto auf einer mit Schlaglöchern übersäten Straße"))
-console.log(caesar13("32prze()^%progra$#^&MOWANI123"))
+verify(caesar13('PRZEPROGRAMOWANI'), 'CEMRCEBTENZBJNAV')
+verify(caesar13('PrZePrOgRaMoWaNi'), 'CeMrCeBtEnZbJnAv')
+verify(caesar13('PRZE123programo3456WANi789'), 'CEMR123cebtenzb3456JNAv789')
+verify(caesar13('Reprogramat n viitorul apropiat'), 'Ercebtenzngaivvgbehyncebcvng')
+verify(caesar13('PROGRAmowaMckenko321'), 'CEBTENzbjnZpxraxb321')
