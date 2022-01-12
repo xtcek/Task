@@ -12,7 +12,8 @@ function caesar13(str) {
 
 	const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	const special = /[\W]/g
-	return str.replace(special, '').split('')
+	
+	return str.replace(special, "").split("")
 		.map(el => {
 			if (!Number.isNaN(+el)) {
 				return el
@@ -26,6 +27,6 @@ function caesar13(str) {
 }
 
 console.log(caesar13(12345678))
-console.log(caesar13("PRZEPROGRAMOWANI"))
-console.log(caesar13("123A$b        cd%^efghij098"))
+console.log(caesar13("PRZEP                            ROGRAMOWANI"))
+console.log(caesar13("Ich fahre mit meinem Auto auf einer mit Schlaglöchern übersäten Straße"))
 console.log(caesar13("32prze()^%progra$#^&MOWANI123"))
