@@ -25,11 +25,7 @@ function caesar13(str) {
 		})
 		.join("")
 }
-// console.log(caesar13('PRZEPROGRAMOWANI'));
-// console.log(caesar13('PrZePrOgRaMoWaNi'));
-// console.log(caesar13('PRZE123$%^pro&*()-=gramo3456WANi789'));
-// console.log(caesar13('     Repro     gramat în $%^&              viitorul        ap   ro pi a      t'));
-// console.log(caesar13('PROGRAкы   ж г ы м д ы    ш      mowaно́вoйMücke nko321$$##@@!!'));
+
 
 function verify(input, goal){
 	if(input === goal){
