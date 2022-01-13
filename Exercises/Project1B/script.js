@@ -41,6 +41,6 @@ function verify(input, goal){
 
 verify(caesar13('PRZEPROGRAMOWANI'), 'CEMRCEBTENZBJNAV')
 verify(caesar13('PrZePrOgRaMoWaNi'), 'CeMrCeBtEnZbJnAv')
-verify(caesar13('PRZE123programo3456WANi789'), 'CEMR123cebtenzb3456JNAv789')
-verify(caesar13('Reprogramat n viitorul apropiat'), 'Ercebtenzngaivvgbehyncebcvng')
-verify(caesar13('PROGRAmowaMckenko321'), 'CEBTENzbjnZpxraxb321')
+verify(caesar13('P R Z E 1 2 3 p r o g r a m o 3 4 5 6 W A N i 7 8 9'), 'CEMR123cebtenzb3456JNAv789')
+verify(caesar13('     Repro     gramat în $%^&              viitorul        ap   ro pi a      t'), 'Ercebtenzngaivvgbehyncebcvng')
+verify(caesar13('PROGRAкы   ж г ы м д ы    ш      mowaно́вйMücke nko321$$##@@!!'), 'CEBTENzbjnZpxraxb321')
