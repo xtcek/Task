@@ -7,4 +7,8 @@ const Cards = {
 		length: [13, 16],
 		number: [4],
 	},
+	'American Express': {
+		length: [15],
+		number: [34, 37],
+	},
 }
