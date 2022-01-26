@@ -13,6 +13,8 @@ cardNumbers[1] = {
 
 cardNumbers[2] = {
     name: 'American Express',
+    length: '15',
+    prefixes: '34, 37'
 }
 
 
