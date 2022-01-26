@@ -14,7 +14,7 @@ const Cards = {
 }
 
 const numToString = number => number.toString()
-console.log(numToString('123456789876'));
+
 
 
 
