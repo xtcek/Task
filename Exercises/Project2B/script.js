@@ -1,4 +1,7 @@
 const cardNumbers = []
+cardNumbers[0] = {
+    
+}
 
 function verifyProvider() {
     
