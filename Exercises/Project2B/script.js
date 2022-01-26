@@ -1,3 +1,5 @@
+const cardNumbers = []
+
 function verifyProvider() {
     
 }
