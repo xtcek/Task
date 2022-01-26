@@ -15,6 +15,9 @@ const Cards = {
 
 const numToString = number => number.toString()
 
+const stringToNumArr = number => {
+	
+}
 
 
 
