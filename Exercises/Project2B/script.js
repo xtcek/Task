@@ -7,6 +7,8 @@ cardNumbers[0] = {
 
 cardNumbers[1] = {
     name: 'Visa',
+    length: '13, 16',
+    prefixes: '4'
 }
 
 cardNumbers[2] = {
