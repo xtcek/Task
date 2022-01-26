@@ -16,7 +16,7 @@ const Cards = {
 const numToString = number => number.toString()
 
 const stringToNumArr = number => {
-	
+	return numToString(number).split("")
 }
 
 
