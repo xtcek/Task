@@ -6,11 +6,11 @@ cardNumbers[0] = {
 }
 
 cardNumbers[1] = {
-
+    name: 'Visa',
 }
 
 cardNumbers[2] = {
-    
+    name: 'American Express',
 }
 
 
