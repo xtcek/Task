@@ -22,7 +22,8 @@ function verifyProvider() {
     
 }
 
-function verifyCardNumber() {
+function verifyCardNumber(val) {
+
     
 }
 
