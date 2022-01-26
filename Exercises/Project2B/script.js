@@ -12,3 +12,16 @@ const Cards = {
 		number: [34, 37],
 	},
 }
+
+
+
+
+
+
+
+
+
+
+function checkCardNumber(number) {
+	
+}
