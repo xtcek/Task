@@ -69,13 +69,13 @@ const decodeCardType = number => {
 
 	for (const card in Cards) {
 		const { length, number } = Cards[card]
-		if (number.includes(cardType) && length.includes(cardLength)) {
-			cardName = card
-			break
-		}
+		// if (number.includes(cardType) && length.includes(cardLength)) {
+		// 	cardName = card
+		// 	break
+		// }
 	}
 
-	return cardName
+	// return cardName
 }
 
 const checkCardNumber = number => {
@@ -92,7 +92,7 @@ const checkCardNumber = number => {
 	// return
 }
 
-checkCardNumber(5575060112299324)
-checkCardNumber(5193080150954111)
-checkCardNumber("4716 3886 5385 2323")
-checkCardNumber(348933579298848)
+// checkCardNumber(5575060112299324)
+// checkCardNumber(5193080150954111)
+// checkCardNumber("4716 3886 5385 2323")
+// checkCardNumber(348933579298848)
