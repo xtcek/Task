@@ -70,13 +70,13 @@ const decodeCardType = number => {
 	for (const card in Cards) {
 		const { length, number } = Cards[card]
 		const startsWith = number.map(el => cardType.toString().startsWith(el))
-		if (number.includes(cardType) && length.includes(cardLength)) {
+		if (startsWith.includes(true) && length.includes(cardLength)) {
 			cardName = card
 			break
 		}
 	}
 
-	// return cardName
+	return cardName
 }
 
 const checkCardNumber = number => {
