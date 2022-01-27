@@ -18,7 +18,7 @@ const numToString = number => {
 }
 
 const stringToNumArr = number => {
-	return numToString(number)
+	return numToString(number).replace(/[\W]/g, '')
 		.split("")
 		.map(num => +num)
 }
