@@ -57,9 +57,13 @@ const cardNumVals = numberArr => {
 	const { odd: oddFiltered, even: evenFiltered } = filterNumbers(numberArr)
 	let oddSum
 	let evenSum
-
-	 oddSum = calcArraySum(oddFiltered)
-	 evenSum = calcArraySum(mapArrayNums(evenFiltered))
+	if (numberArr.length % 2 === 0) {
+		oddSum = calcArraySum(oddFiltered)
+		evenSum = calcArraySum(mapArrayNums(evenFiltered))
+	} else {
+		oddSum = calcArraySum(evenFiltered)
+		evenSum = calcArraySum(mapArrayNums(oddFiltered))
+	}
 
 	return { oddSum, evenSum }
 }
