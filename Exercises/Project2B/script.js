@@ -19,6 +19,11 @@ const stringToNumArr = number => {
 	return numToString(number).split("")
 }
 
+const filterNumbers = numberArr => {
+	const filteredNumbers = {
+
+	}
+}
 
 
 
