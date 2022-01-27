@@ -54,6 +54,16 @@ const typeCardNumber = num => {
 const decodeCardType = number => {
 	const cardLength = stringToNumArr(number).length
 	const cardType = typeCardNumber(number).join('')
+	let cardName;
+
+	for(const card in Cards){
+		const { length, number } = Cards[card]
+		if(number.includes(cardType) && length.includes(cardLength)){
+			
+		}
+	}
+
+
 	console.log(cardLength);
 	console.log(cardType);
 }
