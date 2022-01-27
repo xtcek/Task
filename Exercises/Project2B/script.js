@@ -51,6 +51,13 @@ const typeCardNumber = num => {
 }
 // console.log(typeCardNumber(5575060112239323));
 
+const decodeCardType = number => {
+	const cardLength = stringToNumArr(number).length
+	const cardType = typeCardNumber(number).join('')
+	console.log(cardLength);
+	console.log(cardType);
+}
+decodeCardType(1234321)
 
 
 
