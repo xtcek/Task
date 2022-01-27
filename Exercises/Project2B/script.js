@@ -18,7 +18,7 @@ const numToString = number => {
 }
 
 const stringToNumArr = number => {
-	return numToString(number).replace(/[\W]/g, '')
+	return numToString(number)
 		.split("")
 		.map(num => +num)
 }
@@ -71,30 +71,28 @@ const decodeCardType = number => {
 		const { length, number } = Cards[card]
 		if (number.includes(cardType) && length.includes(cardLength)) {
 			cardName = card
-			break;
+			break
 		}
 	}
-
-	console.log(cardLength)
-	console.log(cardType)
 
 	return cardName
 }
 
-decodeCardType(4)
-
-function checkCardNumber(number) {
+const checkCardNumber = number => {
 	const numberArr = stringToNumArr(number)
 
 	const { oddSum, evenSum } = cardNumVals(numberArr)
 
 	const luhnAlghoritm = (oddSum + evenSum) % 10 === 0
-		if(luhnAlghoritm){
-			console.log(decodeCardType(number))
-			return
-		}
-		console.log('Nieprawidłowy');
+	if (luhnAlghoritm) {
+		console.log(decodeCardType(number))
+		return
+	}
+	console.log("Nieprawidłowy")
 	// return
 }
 
 checkCardNumber(5575060112299324)
+checkCardNumber(5193080150954111)
+checkCardNumber("4716 3886 5385 2323")
+checkCardNumber(348933579298848)
