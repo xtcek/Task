@@ -55,5 +55,10 @@ console.log(typeCardNumber(5575060112239323));
 
 
 function checkCardNumber(number) {
+	const numberArr = stringToNumArr(number)
+
+
+
+	// return 
 	
 }
