@@ -96,7 +96,6 @@ const checkCardNumber = number => {
 		return
 	}
 	console.log("Nieprawidłowy")
-	// return
 }
 
 // checkCardNumber(5575060112299324)
