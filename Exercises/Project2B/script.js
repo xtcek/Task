@@ -19,7 +19,7 @@ const numToString = number => {
 	
 
 const stringToNumArr = number => {
-	return numToString(number).split("")
+	return numToString(number).split("").map(num => +num)
 }
 
 const filterNumbers = numberArr => {
@@ -69,6 +69,8 @@ const decodeCardType = number => {
 
 	return cardName
 }
+
+decodeCardType(4)
 
 
 
