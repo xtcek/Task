@@ -26,7 +26,7 @@ const filterNumbers = numberArr => {
 	}
 
 	numberArr.filter((num, idx) => {
-		return filteredNumbers[idx % 2 !== 0 ? 'odd' : 'even']
+		return filteredNumbers[`{idx % 2 !== 0 ? 'odd' : 'even'}`]
 	})
 	return filteredNumbers
 }
