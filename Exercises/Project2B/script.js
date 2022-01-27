@@ -30,12 +30,15 @@ const filterNumbers = numberArr => {
 	})
 	return filteredNumbers
 }
+console.log(filterNumbers(stringToNumArr(123456778)));
 
 const calcArraySum = numberArr => {
-	// return 
+	 return numberArr.reduce((prev, next) => (prev += next), 0) 
 }
 
-
+const mapArrayNums = numberArr => {
+	return 
+}
 
 
 
