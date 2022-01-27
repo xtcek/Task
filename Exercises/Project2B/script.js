@@ -21,7 +21,8 @@ const stringToNumArr = number => {
 
 const filterNumbers = numberArr => {
 	const filteredNumbers = {
-
+		odd = [],
+		even = []
 	}
 }
 
