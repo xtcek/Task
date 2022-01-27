@@ -64,7 +64,7 @@ const cardNumVals = numberArr => {
 
 const decodeCardType = number => {
 	const cardLength = stringToNumArr(number).length
-	const cardType = typeCardNumber(number).join("")
+	const cardType = +typeCardNumber(number).join("")
 	let cardName
 
 	for (const card in Cards) {
@@ -96,3 +96,5 @@ function checkCardNumber(number) {
 		console.log('Nieprawidłowy');
 	// return
 }
+
+checkCardNumber(5575060112299324)
