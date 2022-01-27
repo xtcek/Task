@@ -53,6 +53,12 @@ const typeCardNumber = num => {
 }
 // console.log(typeCardNumber(5575060112239323));
 
+const cardNumVals = numberArr => {
+	const { odd: oddFiltered, even: evenFiltered} = filterNumbers(numberArr)
+
+	
+}
+
 const decodeCardType = number => {
 	const cardLength = stringToNumArr(number).length
 	const cardType = typeCardNumber(number).join("")
