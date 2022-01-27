@@ -37,9 +37,10 @@ const calcArraySum = numberArr => {
 }
 
 const mapArrayNums = numberArr => {
-	return numberArr.map(el => (el * 2 >= 10))
+	return numberArr.map(el => (el * 2 >= 10) ? [1, (el * 2) % 10] : el * 2).flat()
 }
 
+console.log(mapArrayNums(stringToNumArr(1234567887654)))
 
 
 
