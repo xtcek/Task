@@ -33,7 +33,7 @@ const filterNumbers = numberArr => {
 	})
 	return filteredNumbers
 }
-console.log(filterNumbers(stringToNumArr(123456778)));
+// console.log(filterNumbers(stringToNumArr(123456778)));
 
 const calcArraySum = numberArr => {
 	 return numberArr.reduce((prev, next) => (prev += next), 0) 
@@ -43,13 +43,13 @@ const mapArrayNums = numberArr => {
 	return numberArr.map(el => (el * 2 >= 10) ? [1, (el * 2) % 10] : el * 2).flat()
 }
 
-console.log(mapArrayNums(stringToNumArr(1234567887654)))
+// console.log(mapArrayNums(stringToNumArr(1234567887654)))
 
 const typeCardNumber = num => {
 	return stringToNumArr(num).slice(0, 2)
 
 }
-console.log(typeCardNumber(5575060112239323));
+// console.log(typeCardNumber(5575060112239323));
 
 
 
