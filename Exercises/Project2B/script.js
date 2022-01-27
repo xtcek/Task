@@ -21,12 +21,12 @@ const stringToNumArr = number => {
 
 const filterNumbers = numberArr => {
 	const filteredNumbers = {
-		odd = [],
-		even = []
+		odd: [],
+		even: [],
 	}
 
 	numberArr.filter((num, idx) => {
-		
+
 	})
 }
 
