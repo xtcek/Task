@@ -59,7 +59,7 @@ const decodeCardType = number => {
 	for(const card in Cards){
 		const { length, number } = Cards[card]
 		if(number.includes(cardType) && length.includes(cardLength)){
-
+			cardName = card
 		}
 	}
 
