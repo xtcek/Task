@@ -13,7 +13,10 @@ const Cards = {
 	},
 }
 
-const numToString = number => number.toString()
+const numToString = number => {
+	return number.toString()
+} 
+	
 
 const stringToNumArr = number => {
 	return numToString(number).split("")
