@@ -66,6 +66,8 @@ const decodeCardType = number => {
 
 	console.log(cardLength);
 	console.log(cardType);
+
+	return cardName
 }
 
 
