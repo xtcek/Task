@@ -31,6 +31,10 @@ const filterNumbers = numberArr => {
 	return filteredNumbers
 }
 
+const calcArraySum = numberArr => {
+	// return 
+}
+
 
 
 
