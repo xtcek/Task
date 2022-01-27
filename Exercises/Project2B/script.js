@@ -90,7 +90,9 @@ function checkCardNumber(number) {
 
 	const luhnAlghoritm = (oddSum + evenSum) % 10 === 0
 		if(luhnAlghoritm){
+			console.log(decodeCardType(number))
 			return
 		}
+		console.log('Nieprawidłowy');
 	// return
 }
