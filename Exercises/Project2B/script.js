@@ -37,9 +37,7 @@ const calcArraySum = numberArr => {
 }
 
 const mapArrayNums = numberArr => {
-	return numberArr.map(el => {
-		
-	})
+	return numberArr.map(el => (el * 2 >= 10))
 }
 
 
