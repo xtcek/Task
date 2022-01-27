@@ -37,7 +37,9 @@ const calcArraySum = numberArr => {
 }
 
 const mapArrayNums = numberArr => {
-	return 
+	return numberArr.map(el => {
+		
+	})
 }
 
 
