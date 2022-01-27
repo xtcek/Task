@@ -42,6 +42,12 @@ const mapArrayNums = numberArr => {
 
 console.log(mapArrayNums(stringToNumArr(1234567887654)))
 
+const typeCardNumber = num => {
+	return stringToNumArr(num).slice(0, 2)
+
+}
+console.log(typeCardNumber(5575060112239323));
+
 
 
 
