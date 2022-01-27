@@ -87,5 +87,10 @@ function checkCardNumber(number) {
 	const numberArr = stringToNumArr(number)
 
 	const { oddSum, evenSum } = cardNumVals(numberArr)
+
+	const luhnAlghoritm = (oddSum + evenSum) % 10 === 0
+		if(luhnAlghoritm){
+			return
+		}
 	// return
 }
