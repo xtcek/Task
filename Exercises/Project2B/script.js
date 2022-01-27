@@ -24,6 +24,10 @@ const filterNumbers = numberArr => {
 		odd = [],
 		even = []
 	}
+
+	numberArr.filter((num, idx) => {
+		
+	})
 }
 
 
