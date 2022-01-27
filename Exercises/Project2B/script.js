@@ -86,5 +86,6 @@ decodeCardType(4)
 function checkCardNumber(number) {
 	const numberArr = stringToNumArr(number)
 
+	const { oddSum, evenSum } = cardNumVals(numberArr)
 	// return
 }
