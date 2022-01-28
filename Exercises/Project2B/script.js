@@ -14,7 +14,7 @@ const Cards = {
 }
 
 const numToString = number => {
-	return number.toString()
+	return number.toString().replace(/\D/g, "")
 }
 
 const stringToNumArr = number => {
@@ -98,7 +98,7 @@ const checkCardNumber = number => {
 	console.log("Nieprawidłowy")
 }
 
-// checkCardNumber(5575060112299324)
-// checkCardNumber(5193080150954111)
-// checkCardNumber("4716 3886 5385 2323")
-// checkCardNumber(348933579298848)
+checkCardNumber("5575-0601-1229-9324")
+checkCardNumber(5193080150954111)
+checkCardNumber("4 7 1 6 3  8 8 6  5 3 8 5   2 3 2 3")
+checkCardNumber('34,89$#3,,,,3579,,,2,,,98,8,,,48,,,,')
