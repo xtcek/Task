@@ -46,7 +46,7 @@ const mapArrayNums = numberArr => {
 		.flat()
 }
 
-// console.log(mapArrayNums(stringToNumArr(1234567887654)))
+console.log(mapArrayNums(stringToNumArr(1234567887654)))
 
 const typeCardNumber = num => {
 	return stringToNumArr(num).slice(0, 2)
@@ -98,7 +98,17 @@ const checkCardNumber = number => {
 	console.log("Nieprawidłowy")
 }
 
-checkCardNumber("5575-0601-1229-9324")
-checkCardNumber(5193080150954111)
-checkCardNumber("4 7 1 6 3  8 8 6  5 3 8 5   2 3 2 3")
-checkCardNumber('34,89$#3,,,,3579,,,2,,,98,8,,,48,,,,')
+// checkCardNumber("5575-0601-1229-9324")
+// checkCardNumber(5193080150954111)
+// checkCardNumber("4 7 1 6 3  8 8 6  5 3 8 5   2 3 2 3")
+// checkCardNumber('34,89$#3,,,,3579,,,2,,,98,8,,,48,,,,')
+checkCardNumber(4012001036853337)
+checkCardNumber(4012001036853330)
+checkCardNumber(4012001037461114)
+checkCardNumber(4012001037461113)
+checkCardNumber(5500000000000004)
+checkCardNumber(5500000000000003)
+checkCardNumber(370000000000002)
+checkCardNumber(370000000000001)
+// checkCardNumber('34,89$#3,,,,3579,,,2,,,98,8,,,48,,,,')
+// checkCardNumber('34,89$#3,,,,3579,,,2,,,98,8,,,48,,,,')
