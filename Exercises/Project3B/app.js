@@ -1,6 +1,4 @@
 const subSite1 = document.querySelector(".subsite1")
-const subSite2 = document.querySelector(".subsite2")
-
 // Event handler for change query URL params
 subSite1.addEventListener("click", function (e) {
 	e.preventDefault()
@@ -29,8 +27,18 @@ history.pushState(
 // const input2 = document.getElementById("num2").value
 
 const calcBMI = (weight, height) => {
-	const BMI = weight / height ** 2
-	return BMI
+	let bmi = (weight / Math.pow(height / 100, 2)).toFixed(2)
+	console.log(bmi)
+	if (bmi < 18.5) {
+		console.log("Niedowaga")
+	} else if (bmi >= 18.5 && bmi < 25) {
+		console.log("Wartość prawidłowa")
+	} else {
+		console.log("Nadwaga")
+	}
+	return bmi
 }
 
-console.log(calcBMI(175, 120))
+calcBMI(50, 173)
+calcBMI(70, 190)
+calcBMI(100, 180)
