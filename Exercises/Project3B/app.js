@@ -1,13 +1,13 @@
 const changeURL = () => {
 	let path = window.location.pathname
 	console.log(path)
-	if (path === "/Project1/index.html") {
+	if (path === "/Exercises/Project3B/index.html") {
 		window.history.pushState(
 			null,
 			null,
 			"?utm_source=Testy&utm_medium=Pierwsz&utm_campaign=Lato&utm_id=MateuszGr%C4%99da"
 		)
-	} else if (path === "/Project1/ws1.html") {
+	} else if (path === "/Exercises/Project3B/ws1.html") {
 		window.history.pushState(
 			null,
 			null,
@@ -16,10 +16,12 @@ const changeURL = () => {
 				"utm_campaign=Zima"
 			)
 		)
-	} else if (path === "/Project1/ws2.html") {
+	} else if (path === "/Exercises/Project3B/ws2.html") {
 		href = window.location.href
 	}
 }
+
+changeURL()
 
 function calcBMI(weight, height) {
 	let bmi = (weight / Math.pow(height / 100, 2)).toFixed(2)
