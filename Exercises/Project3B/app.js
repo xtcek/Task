@@ -7,18 +7,19 @@ const changeURL = () => {
 			null,
 			"?utm_source=Testy&utm_medium=Pierwsz&utm_campaign=Lato&utm_id=MateuszGr%C4%99da"
 		)
-}  else if (path === "/Project1/ws1.html") {
-	window.history.pushState(
-		null,
-		null,
-		"#przejscie?utm_source=Testy&utm_medium=Pierwsz&utm_campaign=Lato&utm_id=MateuszGr%C4%99da".replace(
-			"utm_campaign=Lato",
-			"utm_campaign=Zima"
+	} else if (path === "/Project1/ws1.html") {
+		window.history.pushState(
+			null,
+			null,
+			"#przejscie?utm_source=Testy&utm_medium=Pierwsz&utm_campaign=Lato&utm_id=MateuszGr%C4%99da".replace(
+				"utm_campaign=Lato",
+				"utm_campaign=Zima"
+			)
 		)
-	)
+	} else if (path === "/Project1/ws2.html") {
+		href = window.location.href
+	}
 }
-}
-
 
 const calcBMI = (weight, height) => {
 	let bmi = (weight / Math.pow(height / 100, 2)).toFixed(2)
