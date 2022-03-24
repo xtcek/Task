@@ -21,16 +21,16 @@ const changeURL = () => {
 	}
 }
 
-const calcBMI = (weight, height) => {
+function calcBMI(weight, height) {
 	let bmi = (weight / Math.pow(height / 100, 2)).toFixed(2)
-	console.log(bmi)
-	if (bmi < 18.5) {
+	if (bmi <= 18.5) {
 		console.log("Niedowaga")
-	} else if (bmi >= 18.5 && bmi < 25) {
+	} else if (bmi <= 25 && bmi > 18.5) {
 		console.log("Wartość prawidłowa")
 	} else {
 		console.log("Nadwaga")
 	}
+
 	return bmi
 }
 
